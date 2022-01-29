@@ -37,7 +37,7 @@ d1, d2 = get_coords(toponym_to_find)
 # Собираем параметры для запроса к StaticMapsAPI:
 map_params = {
     "ll": ",".join([toponym_longitude, toponym_lattitude]),
-    "spn": ",".join([d1, d2]),
+    "spn": ",".join([str(d1), str(d2)]),
     "l": "map",
     "pt": ','.join((str(toponym_longitude), str(toponym_lattitude)))
 }
