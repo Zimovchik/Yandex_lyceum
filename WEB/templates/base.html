@@ -7,5 +7,14 @@
 <body>
 <h1>Миссия Колонизация Марса</h1>
 <h4>И на Марсе будут яблони цвести!</h4>
+{% if "инженер" == t or "строитель" == t %}
+<h2>Инженерные тренажеры</h2>
+<img src="https://c4.wallpaperflare.com/wallpaper/864/175/606/star-trek-star-trek-enterprise-uss-enterprise-spaceship-spaceship-hd-wallpaper-preview.jpg"
+     alt="здесь должна была быть картинка, но не нашлась">
+{% else %}
+<h2>Научные симуляторы</h2>
+<img src="https://i.pinimg.com/originals/9e/b7/09/9eb709fba04d35fb81259756df87fa3b.jpg"
+     alt="bruh">
+{% endif %}
 </body>
 </html>
